@@ -10,6 +10,8 @@ package praktikum_inheritance;
  * @author USER
  */
 public class MahasiswaFilkom extends Manusia{
+    private static int totalMahasiswa = 0;
+
     
     private String NIM;
     private double IPK;
@@ -18,7 +20,11 @@ public class MahasiswaFilkom extends Manusia{
        super(nama, NIK, jenisKelamin, menikah);
        this.NIM = NIM;
        this.IPK = IPK;
+       totalMahasiswa++;
    }
+    public static int getTotalMahasiswa() {
+        return totalMahasiswa;
+    }
     public String getNIM() {
         return NIM;
     }

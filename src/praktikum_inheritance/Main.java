@@ -15,7 +15,6 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Objek Pekerja
         Pekerja pekerja1 = new Pekerja(8, 20, "123456789", "John Doe", "1234567890", true, false);
         Pekerja pekerja2 = new Pekerja(7, 22, "987654321", "Jane Smith", "0987654321", false, true);
         Pekerja pekerja3 = new Pekerja(9, 18, "567890123", "Michael Johnson", "5678901234", true, true);
@@ -55,6 +54,11 @@ public class Main {
         System.out.println(manusia1+"\n");
         System.out.println(manusia2+"\n");
         System.out.println(manusia3+"\n");
+        
+        System.out.println("Total Manusia: " + Manusia.getTotalManusia());
+        System.out.println("Total Mahasiswa: " + MahasiswaFilkom.getTotalMahasiswa());
+        System.out.println("Total Pekerja: " + Pekerja.getTotalPekerja());
+        System.out.println("Total Manager: " + Manager.getTotalManager());
 
     }
     

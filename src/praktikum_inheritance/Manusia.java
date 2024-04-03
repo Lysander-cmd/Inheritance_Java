@@ -10,7 +10,9 @@ package praktikum_inheritance;
  * @author USER
  */
 public class Manusia {
-
+    private static int totalManusia = 0;
+    
+    
     private String nama;
     private String NIK;
     boolean jenisKelamin;
@@ -21,8 +23,11 @@ public class Manusia {
         this.NIK = NIK;
         this.jenisKelamin = jenisKelamin;
         this.menikah = menikah;
+        totalManusia++;
     }
-
+    public static int getTotalManusia() {
+        return totalManusia;
+    }
     public String getNama() {
         return nama;
     }

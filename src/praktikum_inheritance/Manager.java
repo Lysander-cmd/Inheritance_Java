@@ -10,13 +10,18 @@ package praktikum_inheritance;
  * @author USER
  */
 public class Manager extends Pekerja{
+    private static int totalManager = 0;
+    
      private int lamaKerja;
 
     public Manager(int jamKerja, int hariKerja, String NIP, String nama, String NIK, boolean jenisKelamin, boolean menikah, int lamaKerja) {
         super(jamKerja, hariKerja, NIP, nama, NIK, jenisKelamin, menikah);
         this.lamaKerja = lamaKerja ;
+        totalManager++;
     }
-
+public static int getTotalManager() {
+        return totalManager;
+    }
    public int getLamaKerja() {
        return lamaKerja;
    }

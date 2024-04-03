@@ -11,6 +11,8 @@ package praktikum_inheritance;
  */
 public class Pekerja extends Manusia{
     
+    private static int totalPekerja = 0;
+    
    private double gaji;
    private double bonus;
    private int jamKerja;
@@ -25,6 +27,10 @@ public class Pekerja extends Manusia{
         this.NIP = NIP;
         this.gaji = hitungGaji();
         this.bonus = hitungBonus();
+        totalPekerja++;
+    }
+     public static int getTotalPekerja() {
+        return totalPekerja;
     }
     public double getGaji() {
         return gaji;
